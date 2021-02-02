@@ -17,7 +17,7 @@
     margin-bottom: 0;
     margin-top: 0;
     spacing: 0;
-    font: "mono 9";
+    font: "mono 20";
 }
 
 #listview {
@@ -41,7 +41,7 @@
 }
 
 #element {
-    padding: 0.5em;
+    padding: 16;
     border: 0 0 1 0;
     border-color: @separatorcolor;
     background-color: @backgroundcoloralternate;
@@ -85,14 +85,14 @@
 }
 
 #prompt {
-    padding: 0.5em;
+    padding: 16;
     background-color: @windowsbordercolor;
     text-color: @foregroundcolorinverse;
     border: 0 1 0 0;
 }
 
 #entry {
-    padding: 0.4em;
+    padding: 16;
 }
 
 #scrollbar {
