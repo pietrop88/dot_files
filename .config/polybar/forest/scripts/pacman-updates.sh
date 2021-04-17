@@ -2,7 +2,8 @@
 
 updates=$(checkupdates | wc -l)
 
-if [ "$updates" -ne "0" ]; then
+integer='^[0-9]+$'
+if [[ $yournumber =~ $integer ]] || [ "$updates" -ne "0" ]; then
     echo "$updates" "updates"
 else
     echo "None"
