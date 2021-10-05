@@ -94,6 +94,7 @@
 
 #entry {
     padding: 16;
+    text-color: @foregroudcolor;
 }
 
 #scrollbar {
