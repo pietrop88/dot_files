@@ -1,6 +1,6 @@
 * {
     backgroundcolor: #141C21;
-    backgroundcoloralternate: #141C21;
+    backgroundcoloralternate: #EEEEEE;
     backgroundcoloraccent: #FFEA00;
     separatorcolor: #3b4252;
     scrollbarcolor: #3b4252;
@@ -55,6 +55,7 @@
     border: 0 0 1 0;
     border-color: @separatorcolor;
 }
+
 
 #element.alternate.normal {
     background-color: @backgroundcoloralternate;
