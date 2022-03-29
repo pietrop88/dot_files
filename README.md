@@ -2,13 +2,8 @@
 
 ## Aur packages
 
-* aur_tbsm_xinitrc
-* freecad_appimage
-* fritzing
 * megacmd-bin
-* nerd-fonts-dejavu-complete
-* polybar
-* rofi-dmenu
-* spotify
-* ttf-material-icon-git
+* rofi-lbonn-wayland
+* tbsm
+* ttf-meslo-nerd-font-powerlevel10k
 * tulizu 
