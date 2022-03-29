@@ -1,111 +1,130 @@
+
 * {
-    backgroundcolor: #141C21;
-    backgroundcoloralternate: #EEEEEE;
-    backgroundcoloraccent: #FFEA00;
-    separatorcolor: #3b4252;
-    scrollbarcolor: #3b4252;
-    foregroundcolor: #839496;
-    foregroundcolorinverse: #141C21;
-    selectioncolor: #80DEEA;
-    windowsbordercolor: #00838F;
-
-    font-size: 1px;
-    border-color: @separatorcolor;
-    background-color: @backgroundcolor;
-    text-color: @foregroundcolor;
-    margin: 0;
-    margin-bottom: 0;
-    margin-top: 0;
-    spacing: 0;
-    font: "mono 12";
+  bg:    #111111FF;
+  ac:    #ffbf00FF;
+  al:    #ffbf0022;
+  all:   #ffbf0066;
+  fg:    white;
 }
 
-#listview {
-    spacing: 0;
-    scrollbar: true;
-    margin: 0;
-    dynamic: true;
-
+configuration {
+	font:							"Iosevka Nerd Font 10";
+    show-icons:                     false;
+	icon-theme: 					"Papirus";
+    display-drun: 					"";
+    drun-display-format:            "{name}";
+    disable-history:                false;
+    fullscreen:                     false;
+	hide-scrollbar: 				true;
+	sidebar-mode: 					false;
 }
 
-#window {
-    background-color: @backgroundcolor;
-    border-color: @windowsbordercolor;
-    border: 4;
+window {
+    transparency:                   "real";
+    background-color:               @bg;
+    text-color:                     @fg;
+	border:							2px;
+	border-color:					@ac;
+    border-radius:                  0px;
+	width:							450px;
+    location:                       center;
+    x-offset:                       0;
+    y-offset:                       0;
 }
 
-#mainbox {
-    border: 0;
-    padding: 0;
-    background-color: @backgroundcoloralternate;
+prompt {
+    enabled: 						true;
+	padding: 						10px;
+	background-color: 				@al;
+	text-color: 					@ac;
+	font:							"Iosevka Nerd Font 10";
 }
 
-#element {
-    padding: 16;
-    border: 0 0 1 0;
-    border-color: @separatorcolor;
-    background-color: @backgroundcoloralternate;
+entry {
+    background-color:               @bg;
+    text-color:                     @ac;
+    placeholder-color:              @all;
+    expand:                         true;
+    horizontal-align:               0;
+    placeholder:                    " Search...";
+    padding:                        10px 10px 10px 0px;
+    border-radius:                  0px;
+    blink:                          true;
+}
+
+inputbar {
+	children: 						[entry];
+    background-color:               @bg;
+    text-color:                     @fg;
+    expand:                         false;
+    spacing:                        0px;
+}
+
+listview {
+    background-color:               @bg;
+    padding:                        0px;
+    columns:                        1;
+    lines:                          5;
+    spacing:                        5px;
+    cycle:                          true;
+    dynamic:                        true;
+    layout:                         vertical;
+    border:                         none;
+}
+
+mainbox {
+    background-color:               @bg;
+	border:							0px;
+    border-radius:                  0px;
+	border-color:					@ac;
+    children:                       [ inputbar, listview ];
+    spacing:                       	10px;
+    padding:                        2px 10px 10px 10px;
+}
+
+element {
+    background-color:               @bg;
+    text-color:                     @fg;
+    orientation:                    horizontal;
+    border-radius:                  0px;
+    padding:                        8px;
+}
+
+#element.normal.normal {
+    background-color:               @bg;
+}
+
+#element.alternate.normal {
+    background-color:               @bg;
+}
+
+element-text {
+    background-color:               @bg;
+    text-color:                     @fg;
+    expand:                         true;
+    horizontal-align:               0;
+    vertical-align:                 0.5;
+    margin:                         0px 2.5px 0px 2.5px;
 }
 
 #element.selected.normal {
-    background-color: @selectioncolor;
-    text-color: @foregroundcolorinverse;
-    border-radius: 0px;
-
-    border: 0 0 1 0;
-    border-color: @separatorcolor;
+    background-color:               @ac;
+    text-color:                     black;
+	border:							0px 0px 0px 0px;
+    border-radius:                  0px;
 }
 
-
-#element.alternate.normal {
-    background-color: @backgroundcoloralternate;
-}
-
-#element.normal.active {
-    background-color: #434c5e;
-}
-
-#element.alternate.active {
-    background-color: #434c5e;
-}
-
-#element.selected.active {
-    background-color: @selectioncolor;
-    text-color: @foregroundcolorinverse;
-    border-radius: 0px;
-
-    border: 0 0 1 0;
-    border-color: @separatorcolor;
-}
-
-#inputbar {
-    border: 0 solid 0 solid 1 solid 0 solid;
-    margin: 0;
-    spacing: 0;
-    border-color: @separatorcolor;
-}
-
-#prompt {
-    padding: 16;
-    background-color: @windowsbordercolor;
-    text-color: @foregroundcolorinverse;
-    border: 0 1 0 0;
-}
-
-#entry {
-    padding: 16;
-    text-color: @foregroudcolor;
+#element-text.selected.normal {
+    background-color:               @ac;
+    text-color:                     black;
+	border:							0px 0px 0px 0px;
+    border-radius:                  0px;
 }
 
 #scrollbar {
-    border: 0;
-    width: 8px;
-    handle-color: @scrollbarcolor;
-    handle-width: 8px;
-    background-color: @backgroundcoloralternate;
-}
-
-#scrollbar handle {
-    border: 1px;
-    border-color: #ff0000;
+    width:        0px ;
+    border:       0;
+    handle-color: @al;
+    handle-width: 0px ;
+    padding:      0;
 }

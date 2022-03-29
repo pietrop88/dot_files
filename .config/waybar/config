@@ -1,0 +1,102 @@
+{
+    "layer": "top",
+    "position": "bottom",
+    "spacing": 4,
+    "modules-left": ["sway/mode", "sway/workspaces"],
+    "modules-right": ["custom/volume_icon", "custom/volume", "custom/cpu_icon", "cpu", "custom/memory_icon", "memory", "custom/disk_icon", "disk","custom/pacman_updates_icon", "custom/pacman_updates", "custom/network_icon", "network" , "custom/bluetooth_icon", "custom/bluetooth", "custom/clock_icon", "clock", "custom/gammastep"],
+    "sway/window": {
+        "max-length": 50
+    },
+    "sway/workspaces": {
+        "format": "{icon}"  
+    },
+    "clock": {
+        "interval": 1,
+        "format": "{:%A, %d %B at %H:%M:%S}",
+        "tooltip": false
+    },
+    "custom/clock_icon": {
+        "format": "",
+        "tooltip": false
+    },
+    "network": {
+        "interval": 2,
+        "format-wifi": "{essid}",
+        "format-disconnected": "None",
+        "tooltip": false
+    },
+    "custom/network_icon": {
+        "format": "",
+        "tooltip": false
+    },
+    "disk": {
+        "interval": 30,
+        "format": "{percentage_free}% free of {total}",
+        "path": "/",
+        "tooltip": false
+    },
+    "custom/disk_icon": {
+        "format": "",
+        "tooltip": false
+    },
+    "memory": {
+        "interval": 30,
+        "format": "{used:0.2f}G used of {total:0.1f}G",
+        "tooltip": false
+    },
+    "custom/memory_icon": {
+        "format": "",
+        "tooltip": false
+    },
+    "cpu": {
+        "interval": 2,
+        "format": "{load}% at {avg_frequency}GHz",
+        "tooltip": false
+    },
+    "custom/cpu_icon": {
+        "format": "",
+        "tooltip": false
+    },
+    "custom/gammastep" :{ 
+        "interval": 60,
+        "exec": "~/.config/waybar/scripts/gammastep.sh",
+        "tooltip": false
+    },
+    "sway/mode": {
+        "format": "{}",
+        "tooltip": false
+    },
+    "custom/pacman_updates" :{
+        "restart-interval": 10, 
+        "exec": "~/.config/waybar/scripts/pacman_updates.sh",
+        "tooltip": false
+    },
+    "custom/pacman_updates_icon": {
+        "format": "",
+        "tooltip": false
+    },
+    "custom/bluetooth" :{
+        "interval": 10, 
+        "exec": "~/.config/waybar/scripts/bluetooth.sh",
+        "tooltip": false
+    },
+    "custom/bluetooth_icon": {
+        "format": "",
+        "tooltip": false
+    },
+    "custom/volume" :{
+        "restart-interval": 1, 
+        "exec": "~/.config/waybar/scripts/pamixer_volume.sh",
+        "on-click": "pamixer -t",
+        "on-scroll-up": "pamixer -i 10",
+        "on-scroll-down": "pamixer -d 10",
+        "tooltip": false
+    },
+    "custom/volume_icon" :{
+        "format": "墳",
+        "on-click": "pamixer -t",
+        "on-scroll-up": "pamixer -i 10",
+        "on-scroll-down": "pamixer -d 10",
+        "tooltip": false
+    }
+}
