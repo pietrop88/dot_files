@@ -7,3 +7,8 @@
 * tbsm
 * ttf-meslo-nerd-font-powerlevel10k
 * tulizu 
+
+## Themes
+
+* gtk: Materia-dark
+* icons: Luv
