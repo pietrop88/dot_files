@@ -92,6 +92,12 @@ window#waybar.hidden {
     color: black;
 }
 
+#custom-capslock {
+    padding: 0 10px;
+    background-color: #FF3232;
+    font-size: 20px;
+}
+	
 #window,
 #workspaces {
     margin: 0 4px;
