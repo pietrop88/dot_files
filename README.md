@@ -7,6 +7,7 @@
 * tbsm
 * ttf-meslo-nerd-font-powerlevel10k
 * tulizu 
+* nemo-compare
 
 ## Themes
 
