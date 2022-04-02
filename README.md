@@ -12,4 +12,4 @@
 ## Themes
 
 * gtk: Materia-dark
-* icons: Luv
+* icons: kora-grey
