@@ -1,5 +1,7 @@
 # My dot files
 
+![screenshot](screenshot.png "screenshot")
+
 ## Aur packages
 
 * megacmd-bin
