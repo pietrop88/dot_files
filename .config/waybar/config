@@ -2,7 +2,7 @@
     "layer": "top",
     "position": "bottom",
     "spacing": 4,
-    "modules-left": ["custom/capslock", "sway/mode", "sway/workspaces"],
+    "modules-left": ["sway/mode", "sway/workspaces"],
     "modules-right": ["custom/volume_icon", "custom/volume", "custom/cpu_icon", "cpu", "custom/memory_icon", "memory", "custom/disk_icon", "disk","custom/pacman_updates_icon", "custom/pacman_updates", "custom/network_icon", "network" , "custom/bluetooth_icon", "custom/bluetooth", "custom/clock_icon", "clock", "custom/gammastep"],
     "sway/window": {
         "max-length": 50
