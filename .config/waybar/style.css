@@ -1,4 +1,5 @@
 @define-color accent-color #ffbf00;
+@define-color error-color #ff1744;
 @define-color bg-color #111111;
 @define-color color1 #FF1744;
 @define-color color2 #E040FB;
@@ -11,7 +12,7 @@
 
 * {
     font-family: "Iosevka", FontAwesome, Roboto, Helvetica, Arial, sans-serif;    
-    font-size: 13px;
+    font-size: 16px;
 }
 
 window#waybar {
@@ -25,14 +26,14 @@ window#waybar.hidden {
 }
 
 #workspaces button {
-    padding: 0;
+    padding: 0 10px;
     background-color: transparent;
-    color: #ffffff;
     /* Use box-shadow instead of border so the text isn't offset */
     box-shadow: inset 0 -3px transparent;
     /* Avoid rounded borders under each workspace name */
     border: none;
     border-radius: 0;
+    color: white;
 }
 
 /* https://github.com/Alexays/Waybar/wiki/FAQ#the-workspace-buttons-have-a-strange-hover-effect */
@@ -65,8 +66,11 @@ window#waybar.hidden {
 #custom-bluetooth,
 #custom-pacman_updates,
 #custom-volume,
-#mpd {
+#mpd,
+#battery,
+#backlight {
     padding-right: 10px;
+    color: white;
 }
 
 #custom-network_icon,
@@ -77,9 +81,20 @@ window#waybar.hidden {
 #custom-pacman_updates_icon,
 #custom-bluetooth_icon,
 #custom-volume_icon,
-#custom-clock_icon {
+#custom-clock_icon,
+#custom-battery_icon,
+#custom-backlight_icon {
     padding: 0px 4px 0px 10px;
     font-size: 24px;
+    color: white;
+}
+
+#battery.warning {
+    color: @accent-color; 
+}
+
+#battery.critical {
+    color: @error-color;
 }
 
 #custom-bluetooth_icon {
@@ -113,43 +128,15 @@ window#waybar.hidden {
     margin-right: 0;
 }
 
-
-#custom-clock_icon {
-}
-
-#custom-network_icon {
-}
-
-#network.disconnected {}
-
-#custom-disk_icon {
-}
-
-#custom-memory_icon {
-}
-
-#custom-cpu_icon {
-}
-
-#custom-pacman_updates_icon {
-}
-
-#custom-bluetooth_icon {
-}
-
-#temperature {
-    background-color: #f0932b;
-}
-
-#temperature.critical {
-    background-color: #eb4d4b;
-}
-
 #keyboard-state > label {
     padding: 0 5px;
 }
 
 #custom-gammastep {
-    color: #ffbf00;
+    color: @accent-color;
     padding: 0 4px;
+}
+
+#custom-battery_icon {
+    font-size: 15px;
 }
