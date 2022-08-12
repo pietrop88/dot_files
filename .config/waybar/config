@@ -115,7 +115,7 @@
 	"format": "{capacity}%"
     },
     "custom/battery_icon": {
-	"interval": 60,
+	"interval": 2,
 	"tooltip": false,
 	"exec": "~/.config/waybar/scripts/battery_icon.sh"
     },
