@@ -1,14 +1,10 @@
-@define-color accent-color #ffbf00;
-@define-color error-color #ff1744;
-@define-color bg-color #111111;
-@define-color color1 #FF1744;
-@define-color color2 #E040FB;
-@define-color color3 #B388FF;
-@define-color color4 #18FFFF;
-@define-color color5 #B9F6CA;
-@define-color color6 #CCFF90;
-@define-color color7 #FF9100;
-@define-color color8 #FF3D00;
+@define-color accent-color #fabd2f;
+@define-color error-color #fb4934;
+@define-color bg-color #32302f;
+@define-color fg-color #ebdbb2;
+@define-color workspace-color #83a598;
+@define-color mode-color #fe8019;
+@define-color caps-color #fabd2f;
 
 * {
     font-family: "Iosevka", FontAwesome, Roboto, Helvetica, Arial, sans-serif;    
@@ -33,25 +29,24 @@ window#waybar.hidden {
     /* Avoid rounded borders under each workspace name */
     border: none;
     border-radius: 0;
-    color: white;
+    color: @fg-color;
 }
 
-/* https://github.com/Alexays/Waybar/wiki/FAQ#the-workspace-buttons-have-a-strange-hover-effect */
 #workspaces button {
     padding: 0;
 }
 
 #workspaces button:hover {
-    box-shadow: inset 0 -3px @accent-color;
+    box-shadow: inset 0 -3px @workspace-color;
 }
 
 #workspaces button.focused {
-    background-color: @accent-color;
+    background-color: @workspace-color;
     color: black;
 }
 
 #workspaces button.urgent {
-    background-color: #eb4d4b;
+    background-color: @accent-color;
 }
 
 #clock,
@@ -73,8 +68,8 @@ window#waybar.hidden {
 #mpd,
 #battery,
 #backlight {
-    padding-right: 10px;
-    color: white;
+    padding-right: 12px;
+    color: @fg-color;
 }
 
 #custom-network_icon,
@@ -88,9 +83,9 @@ window#waybar.hidden {
 #custom-clock_icon,
 #custom-battery_icon,
 #custom-backlight_icon {
-    padding: 0px 4px 0px 10px;
+    padding: 0px 6px 0px 10px;
     font-size: 24px;
-    color: white;
+    color: @fg-color;
 }
 
 #battery.warning {
@@ -107,33 +102,9 @@ window#waybar.hidden {
 
 #mode {
     padding: 0 10px;
-    background-color: #1DE9B6;
+    background-color: @mode-color;
     color: black;
-}
-
-#custom-capslock {
-    padding: 0 10px;
-    background-color: #FF3232;
-    font-size: 20px;
-}
-	
-#window,
-#workspaces {
-    margin: 0 4px;
-}
-
-/* If workspaces is the leftmost module, omit left margin */
-.modules-left > widget:first-child > #workspaces {
-    margin-left: 0;
-}
-
-/* If workspaces is the rightmost module, omit right margin */
-.modules-right > widget:last-child > #workspaces {
-    margin-right: 0;
-}
-
-#keyboard-state > label {
-    padding: 0 5px;
+    margin-right: 6px;
 }
 
 #custom-gammastep {
@@ -143,4 +114,11 @@ window#waybar.hidden {
 
 #custom-battery_icon {
     font-size: 15px;
+}
+
+#keyboard-state label.capslock.locked {
+    background-color: @caps-color;
+    padding: 0 10px;
+    color: black;
+    margin-right: 6px;
 }
