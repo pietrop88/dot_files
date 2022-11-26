@@ -74,9 +74,9 @@ smart_gaps on
 
 ### Colors
 # Set colors
-set $bg #171717
+set $bg #1d2021
 set $fg #eff1f5
-set $br #ffbf00 
+set $br #689d6a 
 
 # class                 border  backgr. text    indicator child_border
 client.focused          $br     $br     $bg     $bg       $br
