@@ -109,14 +109,14 @@ element-text {
 
 #element.selected.normal {
     background-color:               @ac;
-    text-color:                     black;
+    text-color:                     @bg;
 	border:							0px 0px 0px 0px;
     border-radius:                  0px;
 }
 
 #element-text.selected.normal {
     background-color:               @ac;
-    text-color:                     black;
+    text-color:                     @bg;
 	border:							0px 0px 0px 0px;
     border-radius:                  0px;
 }
