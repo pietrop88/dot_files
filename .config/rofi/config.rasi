@@ -1,10 +1,10 @@
 
 * {
-  bg:    #111111FF;
-  ac:    #ffbf00FF;
-  al:    #ffbf0022;
-  all:   #ffbf0066;
-  fg:    white;
+  bg:    #fbf1c7FF;
+  ac:    #689d64FF;
+  al:    #689d6aFF;
+  all:   #689d6aFF;
+  fg:    black;
 }
 
 configuration {
