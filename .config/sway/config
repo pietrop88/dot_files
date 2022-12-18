@@ -39,12 +39,12 @@ exec swayidle -w \
          timeout 185 'swaymsg "output * dpms off"' resume 'swaymsg "output * dpms on"' \
          before-sleep 'swaylock -f -c 000000'
 
-# This will lock your screen after 300 seconds of inactivity, then turn off
+# tHIS WIll lock your screen after 300 seconds of inactivity, then turn off
 # your displays after another 300 seconds, and turn your screens back on when
 # resumed. It will also lock your screen before your computer goes to sleep.
 
 # Inhibit idle
-for_window [class="^.*"] inhibit_idle fullscreen
+for_window [class="^firefox$"] inhibit_idle fullscreen
 
 ### Input configuration
 #
