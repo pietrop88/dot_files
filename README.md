@@ -15,4 +15,4 @@
 ## Themes
 
 * gtk: Materia-dark
-* icons: kora-grey
+* icons: kora-pgrey
