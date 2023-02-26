@@ -6,13 +6,12 @@
 
 * megacmd-bin
 * rofi-lbonn-wayland
-* tbsm
 * ttf-meslo-nerd-font-powerlevel10k
-* tulizu 
 * nemo-compare
 * swaylock-effects
+* nemo-fileroller
 
 ## Themes
 
-* gtk: Materia-dark
+* gtk: Materia-dark (with package materia-gtk-theme)
 * icons: kora-pgrey
