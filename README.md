@@ -9,9 +9,11 @@
 * ttf-meslo-nerd-font-powerlevel10k
 * nemo-compare
 * swaylock-effects
-* nemo-fileroller
+* cura-bin
+* libart-lgpl
+* gimp-git
 
 ## Themes
 
-* gtk: Materia-dark (with package materia-gtk-theme)
+* gtk: Materia-dark (with package _materia-gtk-theme_)
 * icons: kora-pgrey
