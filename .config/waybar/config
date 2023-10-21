@@ -3,7 +3,7 @@
     "position": "bottom",
     "spacing": 0,
     "modules-left": ["sway/mode", "keyboard-state", "sway/workspaces"],
-    "modules-right": ["custom/volume_icon", "custom/volume", "custom/cpu_icon", "cpu", "custom/memory_icon", "memory", "custom/disk_icon", "disk","custom/pacman_updates_icon", "custom/pacman_updates", "custom/network_icon", "network" , "custom/bluetooth_icon", "custom/bluetooth", "custom/backlight_icon", "backlight", "custom/battery_icon", "battery", "custom/clock_icon", "clock", "custom/gammastep"],
+    "modules-right": ["custom/volume_icon", "custom/volume", "custom/cpu_icon", "cpu", "custom/memory_icon", "memory", "custom/disk_icon", "disk","custom/pacman_updates_icon", "custom/pacman_updates", "custom/network_icon", "network" , "custom/bluetooth_icon", "custom/bluetooth",  "custom/clock_icon", "clock", "custom/gammastep"],
     "sway/window": {
         "max-length": 50
     },
@@ -12,7 +12,7 @@
     },
     "clock": {
         "interval": 1,
-        "format": "{:%A, %d %B at %H:%M:%S}",
+        "format": "{:%A, %d %B at %H:%M}",
         "tooltip": false
     },
     "custom/clock_icon": {
@@ -32,7 +32,7 @@
     "disk": {
         "interval": 30,
         "format": "{percentage_free}% free of {total}",
-        "path": "/",
+        "path": "/home",
         "tooltip": false
     },
     "custom/disk_icon": {
