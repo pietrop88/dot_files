@@ -35,8 +35,8 @@ output eDP-1 scale 1.2
 # Example configuration:
 #
 exec swayidle -w \
-         timeout 180 'swaylock -f -c 000000' \
-         timeout 185 'swaymsg "output * dpms off"' resume 'swaymsg "output * dpms on"' \
+         timeout 300 'swaylock -f -c 000000' \
+         timeout 305 'swaymsg "output * dpms off"' resume 'swaymsg "output * dpms on"' \
          before-sleep 'swaylock -f -c 000000'
 
 # tHIS WIll lock your screen after 300 seconds of inactivity, then turn off
