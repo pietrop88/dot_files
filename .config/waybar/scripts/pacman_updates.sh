@@ -3,8 +3,8 @@
 updates=$(checkupdates 2>/dev/null | wc -l)
 
 integer='^[0-9]+$'
-if [[ $yournumber =~ $integer ]] || [ "$updates" -ne "0" ]; then
-    echo "$updates" "updates"
+if [[ $updates =~ $integer ]]; then
+    echo "PKG [$updates"]
 else
-    echo "None"
+    echo "PKG [-]"
 fi

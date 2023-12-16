@@ -1,14 +1,12 @@
 
 * {
-  bg:    #fbf1c7FF;
-  ac:    #689d64FF;
-  al:    #689d6aFF;
-  all:   #689d6aFF;
-  fg:    black;
+  bg:    #ffcc00;
+  ac:    #4b116f;
+  all:   #4b116f88;
 }
 
 configuration {
-	font:							"Iosevka Nerd Font 10";
+	font:							"SquareFont 10";
     show-icons:                     false;
 	icon-theme: 					"Papirus";
     display-drun: 					"";
@@ -17,13 +15,14 @@ configuration {
     fullscreen:                     false;
 	hide-scrollbar: 				true;
 	sidebar-mode: 					false;
+    modes:                          "run,filebrowser";
 }
 
 window {
     transparency:                   "real";
     background-color:               @bg;
-    text-color:                     @fg;
-	border:							2px;
+    text-color:                     @ac;
+	border:						    0px;
 	border-color:					@ac;
     border-radius:                  0px;
 	width:							450px;
@@ -35,7 +34,7 @@ window {
 prompt {
     enabled: 						true;
 	padding: 						10px;
-	background-color: 				@al;
+	background-color: 				@bg;
 	text-color: 					@ac;
 	font:							"Iosevka Nerd Font 10";
 }
@@ -55,7 +54,7 @@ entry {
 inputbar {
 	children: 						[entry];
     background-color:               @bg;
-    text-color:                     @fg;
+    text-color:                     @ac;
     expand:                         false;
     spacing:                        0px;
 }
@@ -84,7 +83,7 @@ mainbox {
 
 element {
     background-color:               @bg;
-    text-color:                     @fg;
+    text-color:                     @ac;
     orientation:                    horizontal;
     border-radius:                  0px;
     padding:                        8px;
@@ -100,7 +99,7 @@ element {
 
 element-text {
     background-color:               @bg;
-    text-color:                     @fg;
+    text-color:                     @ac;
     expand:                         true;
     horizontal-align:               0;
     vertical-align:                 0.5;
@@ -124,7 +123,6 @@ element-text {
 #scrollbar {
     width:        0px ;
     border:       0;
-    handle-color: @al;
     handle-width: 0px ;
     padding:      0;
 }

@@ -1,52 +1,34 @@
 @define-color accent-color #fabd2f;
 @define-color error-color #fb4934;
-@define-color bg-color #32302f;
-@define-color fg-color #ebdbb2;
-@define-color workspace-color #83a598;
-@define-color mode-color #fe8019;
-@define-color caps-color #fabd2f;
+@define-color bg-color transparent;
+@define-color right-fg-color white;
+@define-color left-fg-color black;
+@define-color left-inactive-fg-color rgba(0,0,0,0.4);
 
 * {
-    font-family: "Iosevka Nerd Font Mono", FontAwesome, Roboto, Helvetica, Arial, sans-serif;    
-    font-size: 16px;
+    font-family: "Square Pixel7", sans-serif;    
+    font-size: 13px;
 }
 
 window#waybar {
     background-color: @bg-color;
-    transition-property: background-color;
-    transition-duration: .5s;
 }
 
 window#waybar.hidden {
-    opacity: 0.2;
+    background-color: @bg-color;
 }
 
 #workspaces button {
     padding: 0 10px;
-    background-color: transparent;
-    /* Use box-shadow instead of border so the text isn't offset */
-    box-shadow: inset 0 -3px transparent;
-    /* Avoid rounded borders under each workspace name */
     border: none;
     border-radius: 0;
-    color: @fg-color;
+    color: @left-inactive-fg-color;
+    background-color: @bg-color;
 }
 
-#workspaces button {
-    padding: 0;
-}
 
-#workspaces button:hover {
-    box-shadow: inset 0 -3px @workspace-color;
-}
-
-#workspaces button.focused {
-    background-color: @workspace-color;
-    color: black;
-}
-
-#workspaces button.urgent {
-    background-color: @accent-color;
+#workspaces button.active {
+    color: @left-fg-color;
 }
 
 #clock,
@@ -54,71 +36,18 @@ window#waybar.hidden {
 #cpu,
 #memory,
 #disk,
-#temperature,
 #backlight,
 #network,
-#pulseaudio,
-#custom-media,
-#tray,
-#mode,
-#idle_inhibitor,
-#custom-bluetooth,
 #custom-pacman_updates,
 #custom-volume,
-#mpd,
+#custom-bluetooth,
 #battery,
-#backlight {
-    padding-right: 12px;
-    color: @fg-color;
+#backlight,
+#custom-printer {
+    color: @right-fg-color;
 }
 
-#custom-network_icon,
-#custom-disk_icon,
-#custom-memory_icon,
-#custom-cpu_icon,
-#custom-gammastep,
-#custom-pacman_updates_icon,
-#custom-bluetooth_icon,
-#custom-volume_icon,
-#custom-clock_icon,
-#custom-battery_icon,
-#custom-backlight_icon {
-    padding: 0px 6px 0px 10px;
-    font-size: 24px;
-    color: @fg-color;
-}
-
-#battery.warning {
-    color: @accent-color; 
-}
-
-#battery.critical {
-    color: @error-color;
-}
-
-#custom-bluetooth_icon {
-    font-size: 14px;
-}
-
-#mode {
-    padding: 0 10px;
-    background-color: @mode-color;
-    color: black;
-    margin-right: 6px;
-}
-
-#custom-gammastep {
-    color: @accent-color;
-    padding: 0 4px;
-}
-
-#custom-battery_icon {
-    font-size: 15px;
-}
-
-#keyboard-state label.capslock.locked {
-    background-color: @caps-color;
-    padding: 0 10px;
-    color: black;
-    margin-right: 6px;
+#custom-separator {
+    color: rgba(255,255,255,0.7);
+    padding: 0 6px;
 }
