@@ -16,3 +16,7 @@
 
 * gtk: Midnight-Gray
 * icons: kora-pgrey
+
+## Firefox theme
+
+* dark space
