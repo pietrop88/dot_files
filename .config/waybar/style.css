@@ -4,6 +4,7 @@
 @define-color right-fg-color white;
 @define-color left-fg-color white;
 @define-color left-inactive-fg-color rgba(255,255,255,0.7);
+@define-color warning-color #fabd2f;
 
 * {
     font-family: "Square Pixel7", sans-serif;    
@@ -45,6 +46,14 @@ window#waybar.hidden {
 #backlight,
 #custom-printer {
     color: @right-fg-color;
+}
+
+#battery.critical {
+    color: @error-color;
+}
+
+#battery.warning {
+    color: @warning-color;
 }
 
 #custom-separator {

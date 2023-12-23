@@ -78,11 +78,11 @@
         "bar": "BAT0",
 	    "interval": 60,
 	    "states": {
+		    "warning": 20,
 		    "critical": 10
         },
         "format-discharging": "BAT [{capacity}%]",
         "format-charging": "BAT [+{capacity}%]",
-        "format-discharging-critical":"BAT! [{capacity}%]",
         "tooltip": true,
         "tooltip-format": "{power:0.1f}W - {time}"
     },
