@@ -86,7 +86,7 @@
 		    "warning": 20,
 		    "critical": 10
         },
-        "format-discharging": "BAT [{capacity}%]",
+	"format": "BAT [{capacity}%]",
         "format-charging": "BAT [+{capacity}%]",
         "tooltip": true,
         "tooltip-format": "{power:0.1f}W - {time}"
