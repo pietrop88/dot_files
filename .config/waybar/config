@@ -4,7 +4,7 @@
     "spacing": 0,
     "margin-right": 10,
     "modules-left": ["hyprland/workspaces"],
-    "modules-right": ["custom/printer", "custom/separator", "cpu", "custom/separator", "memory", "custom/separator", "custom/pacman_updates", "custom/separator", "network" , "custom/separator", "custom/bluetooth", "custom/separator", "backlight", "custom/separator", "custom/volume", "custom/separator", "battery", "custom/separator",  "clock"],
+    "modules-right": ["custom/printer", "custom/separator", "cpu", "custom/separator", "memory", "custom/separator", "custom/pacman_updates", "custom/separator", "custom/network", "custom/separator", "custom/bluetooth", "custom/separator", "backlight", "custom/separator", "custom/volume", "custom/separator", "battery", "custom/separator",  "clock"],
     "hyprland/workspaces": {
         "format": "{icon}"  
     },
@@ -43,6 +43,11 @@
         "format-disconnected": "OFFLINE",
         "tooltip": true,
         "tooltip-format": "DOWN {bandwidthDownBits} - UP {bandwidthUpBits}"
+    },
+    "custom/network": {
+        "interval": 10,
+        "exec": "~/.config/waybar/scripts/online.sh",
+        "tooltip": false	
     },
     "memory": {
         "interval": 30,

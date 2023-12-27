@@ -44,15 +44,16 @@ window#waybar.hidden {
 #custom-bluetooth,
 #battery,
 #backlight,
-#custom-printer {
+#custom-printer,
+#custom-network {
     color: @right-fg-color;
 }
 
-#battery.critical {
+#battery.discharging.critical {
     color: @error-color;
 }
 
-#battery.warning {
+#battery.discharging.warning {
     color: @warning-color;
 }
 
