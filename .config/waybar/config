@@ -34,7 +34,8 @@
         "tooltip": false
     },
     "custom/printer": {
-        "format": "VORON0 [OFFLINE]",
+        "interval": 10,
+        "exec": "~/.config/waybar/scripts/voron0.sh",
         "tooltip": false
     },
     "network": {
