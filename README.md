@@ -4,19 +4,17 @@
 
 ## Aur packages
 
-* rofi-lbonn-wayland
-* ttf-meslo-nerd-font-powerlevel10k
-* nemo-compare
-* swaylock-effects-git
-* cura-bin
-* libart-lgpl
+* fritzing
 * gimp-git
-
-## Themes
-
-* gtk: Midnight-Gray
-* icons: kora-pgrey
+* libart-lgpl (exploited by gimp)
+* nemo-compare
+* orca-slicer-bin
+* polyclipping (exploited by fritzing)
+* rofi-lbonn-wayland
+* swaylock-effects-git
+* ttf-harmonyos-sans (exploited by orca slicer)
+* ttf-meslo-nerd-font-powerlevel10k
 
 ## Firefox theme
 
-* dark space
+* [dark space](https://addons.mozilla.org/en-US/firefox/addon/nicothin-space/)
