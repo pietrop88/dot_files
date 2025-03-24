@@ -5,8 +5,6 @@
 ## Aur packages
 
 * fritzing
-* gimp-git
-* libart-lgpl (exploited by gimp)
 * nemo-compare
 * orca-slicer-bin
 * polyclipping (exploited by fritzing)
